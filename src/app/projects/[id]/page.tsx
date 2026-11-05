@@ -26,7 +26,8 @@ export default async function ProjectDetail({ params }: Props) {
   const next = projects[index + 1];
   const video = project.video;
   const hero = video ? undefined : project.detailImages[0];
-  const rest = video ? project.detailImages : project.detailImages.slice(1);
+  // 시연 영상이 있으면 영상이 화면 소개를 대신하므로 「화면」 영역은 생략한다
+  const rest = video ? [] : project.detailImages.slice(1);
 
   return (
     <article className="section container">
