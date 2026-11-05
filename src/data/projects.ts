@@ -116,12 +116,13 @@ export const projects: Project[] = [
     ],
     period: "2026.02.19 – 2026.03.26",
     team: "7인 (BE 4 · FE 3)",
-    role: "러닝헬퍼(OZ 코딩스쿨 2개월 계약, 팀 멘토) — 서비스 기획·API 명세·DB 설계·초기 인프라 총괄, 코드 작성과 PR 리뷰",
+    role: "러닝헬퍼(OZ 코딩스쿨 2개월 계약, 팀 멘토) — 서비스 기획·API 명세·스프린트 운영·DB 설계·초기 인프라 총괄, 코드 작성과 PR 리뷰",
     stack: [
       { label: "Framework", value: "Django 6, Django REST Framework, Gunicorn" },
       { label: "Database", value: "PostgreSQL 17, Redis 7" },
       { label: "Infra", value: "AWS EC2 · S3 · ECR · CloudFront, Docker Compose, GitHub Actions(OIDC)" },
       { label: "Libraries", value: "Celery, Celery Beat, IGDB API, Wikidata SPARQL" },
+      { label: "Collaboration", value: "Notion, GitHub Issues, Swagger UI" },
     ],
     stats: [
       { value: "57건", label: "API 명세 (7개 도메인)" },
@@ -133,7 +134,12 @@ export const projects: Project[] = [
       {
         title: "기획·명세 선확정",
         body:
-          "BE와 FE가 동시에 시작해 서로 기다리면 일정이 밀리는 구조였습니다. 개발보다 기준 문서를 먼저 확정하기로 하고, 기능 범위·화면 흐름·정책을 Notion에 정리한 뒤 ERD와 API 명세 57건(7개 도메인)에 요청·응답·상태코드·중요도·개발 여부·정책 메모까지 정의해 담당자를 배정했습니다. FE는 명세만 보고 화면을 병렬로 개발했고, PR 템플릿에 \"프론트는 Swagger만 보고 작업한다\"는 원칙과 문서화·에러 상수화 기준을 명문화했습니다. 이렇게 정한 기준을 따라 개발이 진행돼 실서비스 배포까지 이어졌습니다.",
+          "앞선 LMS 프로젝트에서는 화면이 먼저 완성됐는데 API가 늦어져, FE가 한동안 임시 데이터로 작업해야 했습니다. 게추도 BE와 FE가 동시에 시작하는 구조라, 개발보다 기준 문서를 먼저 확정하기로 했습니다. 기능 범위·화면 흐름·정책을 Notion에 정리한 뒤 ERD와 API 명세 57건(7개 도메인)에 요청·응답·상태코드·정책 메모를 정의하고, 명세마다 중요도와 이번 개발 포함 여부를 표시해 MVP 범위를 먼저 정한 뒤 담당자를 배정했습니다. FE는 명세만 보고 화면을 병렬로 개발했고, PR 템플릿에 \"프론트는 Swagger만 보고 작업한다\"는 원칙과 문서화·에러 상수화 기준을 명문화했습니다. 이렇게 정한 기준을 따라 개발이 진행돼 실서비스 배포까지 이어졌습니다.",
+      },
+      {
+        title: "1주 스프린트 운영",
+        body:
+          "진행은 1주 단위 스프린트로 운영했습니다. 매일 데일리 스크럼을 진행하며 막힌 작업을 확인해 담당과 우선순위를 다시 조정했고, 작업은 GitHub Issues로 나눠 누가 무엇을 하고 있고 어디까지 진행됐는지 팀 전체가 볼 수 있게 했습니다. 금요일에는 주간 회의와 함께 FE·BE가 구현 범위와 새로 도입한 기술을 공유하는 엔지니어링 데이를 가졌습니다.",
       },
       {
         title: "외부 데이터 API 장애 대응",
@@ -215,6 +221,7 @@ export const projects: Project[] = [
       { label: "Database", value: "PostgreSQL 14 + Tortoise ORM + Aerich, Redis 7" },
       { label: "Infra", value: "AWS IVS · EventBridge · EC2 · ECR · S3 · CloudFront · Cognito · CloudFormation" },
       { label: "Libraries", value: "Celery, aioboto3, Pydantic, PyJWT, FastAdmin, Ruff, Mypy, pytest" },
+      { label: "Collaboration", value: "Jira, Swagger UI" },
     ],
     stats: [
       { value: "63건", label: "PR (123건 중 51%)" },
