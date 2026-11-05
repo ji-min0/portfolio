@@ -261,7 +261,7 @@ export const projects: Project[] = [
     title: "OZ 통합 교육 플랫폼",
     subtitle: "LMS · 쪽지시험 배포와 자동 채점",
     summary:
-      "수강생·강사·관리자가 수업·평가·학습을 한곳에서 관리하는 통합 교육 플랫폼입니다. 29명이 함께 만들어 실서비스로 운영했고, 그중 쪽지시험 백엔드 API를 맡았습니다.",
+      "수강생·강사·관리자가 수업·평가·학습을 한곳에서 관리하는 통합 교육 플랫폼입니다. 29명이 함께 만들어 실서비스로 배포했고, 그중 쪽지시험 백엔드 API를 맡았습니다.",
     image: "/images/work-3.jpg",
     detailImages: [{ src: "/images/work-3.jpg", caption: "쪽지시험 화면" }],
     diagrams: [
