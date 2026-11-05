@@ -4,6 +4,7 @@ export type DetailImage = { src: string; caption: string };
 export type Diagram = DetailImage & { title: string; points?: string[]; improvements?: string[] };
 
 export type Highlight = { title: string; body: string };
+export type Video = { youtubeId: string; title: string; caption: string };
 
 export type Project = {
   id: string;
@@ -14,6 +15,8 @@ export type Project = {
   imagePosition?: string;
   /** 상세 상단 대표 이미지 1장 + 하단 추가 화면 */
   detailImages: DetailImage[];
+  /** 상세 상단 시연 영상(있으면 대표 이미지 대신 표시) */
+  video?: Video;
   /** 설계도·흐름도 */
   diagrams: Diagram[];
   period: string;
@@ -100,6 +103,11 @@ export const projects: Project[] = [
     image: "/images/gechu.png",
     imagePosition: "center top",
     detailImages: [{ src: "/images/gechu.png", caption: "추천 게임 화면 — 취향 기반 추천" }],
+    video: {
+      youtubeId: "JqjMxk_sR-o",
+      title: "게추 시연 영상",
+      caption: "시연 영상 (1분 19초) — 검색·초성 검색, 취향 설정, 추천, 관리자 화면. 관리자 화면의 사용자 정보는 가림 처리했습니다.",
+    },
     diagrams: [
       {
         title: "전체 아키텍처",
@@ -170,6 +178,7 @@ export const projects: Project[] = [
       "Django 초기 세팅, Docker Compose, GitHub Actions CI, EC2·CloudFront 배포",
     ],
     links: [
+      { label: "시연 영상", url: "https://youtu.be/JqjMxk_sR-o" },
       { label: "기획서", url: "https://app.notion.com/p/40d78eb684238092ad9aedf3c5042c04?source=copy_link" },
       { label: "GitHub", url: "https://github.com/GechuProject/gechu-backend" },
       { label: "API 명세서", url: "https://docs.google.com/spreadsheets/d/1KBn3Z7lQNqW6yL6VtGvdBrlzL_bGNrJ3/edit?gid=826222313#gid=826222313" },

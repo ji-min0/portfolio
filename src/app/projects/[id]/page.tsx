@@ -24,7 +24,9 @@ export default async function ProjectDetail({ params }: Props) {
   const index = projects.findIndex((p) => p.id === id);
   const prev = projects[index - 1];
   const next = projects[index + 1];
-  const [hero, ...rest] = project.detailImages;
+  const video = project.video;
+  const hero = video ? undefined : project.detailImages[0];
+  const rest = video ? project.detailImages : project.detailImages.slice(1);
 
   return (
     <article className="section container">
@@ -37,6 +39,21 @@ export default async function ProjectDetail({ params }: Props) {
         <p className="detail-sub">{project.subtitle}</p>
         <p className="detail-summary">{project.summary}</p>
       </header>
+
+      {video && (
+        <figure className="detail-hero detail-video">
+          <div className="video-frame">
+            <iframe
+              src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}?rel=0`}
+              title={video.title}
+              loading="lazy"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+              allowFullScreen
+            />
+          </div>
+          <figcaption>{video.caption}</figcaption>
+        </figure>
+      )}
 
       {hero && (
         <figure className="detail-hero">
