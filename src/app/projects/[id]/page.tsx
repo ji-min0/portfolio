@@ -59,6 +59,7 @@ export default async function ProjectDetail({ params }: Props) {
       {hero && (
         <figure className="detail-hero">
           <img src={hero.src} alt={hero.caption} />
+          <figcaption>{hero.caption}</figcaption>
         </figure>
       )}
 

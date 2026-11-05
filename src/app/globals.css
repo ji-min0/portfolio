@@ -530,6 +530,12 @@ img {
   object-fit: contain;
 }
 
+.detail-hero figcaption {
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  color: var(--text-sub);
+}
+
 .detail-video {
   background: transparent;
   overflow: visible;

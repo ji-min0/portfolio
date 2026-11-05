@@ -193,7 +193,7 @@ export const projects: Project[] = [
       "공연을 라이브로 판매·송출하는 콘서트 스트리밍 서비스입니다. AWS IVS로 영상을 송출·재생하고, EventBridge로 방송 상태를 동기화합니다. 실서비스로 배포했습니다.",
     image: "/images/work-2.png",
     detailImages: [
-      { src: "/images/stream.png", caption: "시청 화면 — 라이브 재생과 실시간 채팅" },
+      { src: "/images/stream.png", caption: "시청 화면 디자인 시안 — 아티스트, 방송 내용, 채팅은 화면 구성을 보여주기 위한 가상 예시이며 실제 방송이 아닙니다." },
     ],
     diagrams: [
       {
