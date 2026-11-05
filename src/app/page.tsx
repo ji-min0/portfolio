@@ -1,23 +1,23 @@
 import Link from "next/link";
-import { FaArrowDown, FaArrowRight, FaFileLines, FaServer, FaCloud } from "react-icons/fa6";
+import { FaArrowDown, FaArrowRight, FaFileLines, FaSitemap, FaCloud } from "react-icons/fa6";
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
 
 const STRENGTHS = [
   {
-    icon: <FaFileLines />,
-    title: "기획·명세",
-    body: "요구사항을 정리하고 API 명세를 먼저 확정해, 여러 직군이 같은 기준으로 동시에 움직이게 합니다.",
+    icon: <FaSitemap />,
+    title: "현업 요구 → 시스템",
+    body: "업무가 실제로 어떻게 돌아가고 어디서 막히는지 먼저 파악하고, 규정과 현장 예외를 시스템 정책으로 옮깁니다.",
   },
   {
-    icon: <FaServer />,
-    title: "백엔드",
-    body: "Django·FastAPI로 인증, 권한, 채점, 외부 데이터 동기화처럼 서비스의 핵심 흐름을 구현합니다.",
+    icon: <FaFileLines />,
+    title: "명세·문서화",
+    body: "요구사항·API 명세·ERD를 개발 전에 확정하고, 합의한 내용을 누구나 읽을 수 있는 문서로 남깁니다.",
   },
   {
     icon: <FaCloud />,
     title: "AWS 인프라",
-    body: "IVS·EventBridge·CloudFront로 스트리밍과 이벤트 흐름을 만들고, IAM Role로 배포 보안을 다집니다.",
+    body: "EC2·CloudFront·EventBridge 구성과 IAM 기반 배포를 직접 다뤄, 개발팀과 같은 언어로 구조와 리스크를 판단합니다.",
   },
 ];
 
@@ -25,14 +25,14 @@ export default function Home() {
   return (
     <>
       <section className="hero container">
-        <p className="hero-role">PM · Backend Developer</p>
+        <p className="hero-role">IT System PM · Backend</p>
         <h1>
           Hi, I&apos;m <span>Jimin</span>
           <br />
           Kang From Korea
         </h1>
         <p className="hero-desc">
-          기획부터 API 명세, AWS 인프라까지 직접 다뤄본, 개발을 아는 PM을 지향합니다.
+          현장의 업무를 이해하고 시스템으로 옮기는, 기술을 아는 PM을 지향합니다.
         </p>
         <div className="hero-actions">
           <Link href="/projects" className="btn btn-fill">
@@ -50,7 +50,7 @@ export default function Home() {
       <section className="section container" id="work">
         <p className="eyebrow">WHAT I DO</p>
         <div className="section-head">
-          <h2>설계로 시작해 끝까지 연결합니다</h2>
+          <h2>업무를 이해하고, 시스템으로 옮깁니다</h2>
         </div>
         <div className="strengths">
           {STRENGTHS.map((s) => (

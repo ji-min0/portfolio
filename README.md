@@ -1,6 +1,6 @@
-# 프로필 페이지
+# 포트폴리오
 
-강지민 포트폴리오 — https://profile-page-snowy.vercel.app
+강지민 포트폴리오 (IT시스템 기획·운영 PM 지원용)
 
 ## 구조
 
@@ -45,4 +45,4 @@ npm run build   # 배포 전 빌드 확인
 
 - Next.js 15(App Router) + TypeScript, 별도 UI 라이브러리 없이 CSS 하나로 관리
 - 프로젝트 상세는 모달 대신 `/projects/[id]` 페이지로 분리해 링크로 바로 공유 가능
-- 이전 FastAPI + Jinja2 버전은 git 히스토리에 남아 있음
+- profile_page 레포(커밋 066310a)에서 복사해 시작

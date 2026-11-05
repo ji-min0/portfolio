@@ -5,7 +5,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: { default: "Jimin | Profile", template: "%s | Jimin" },
-  description: "기획부터 API 명세·AWS 인프라까지 다뤄본 강지민의 포트폴리오",
+  description: "현장의 업무를 시스템으로 옮기는, 기술을 아는 PM 강지민의 포트폴리오",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

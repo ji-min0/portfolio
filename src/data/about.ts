@@ -5,9 +5,9 @@ export type AboutLang = { paragraphs: string[]; tabs: { skills: TabItem[]; exper
 export const about: { kr: AboutLang; en: AboutLang } = {
   "kr": {
     "paragraphs": [
-      "기획부터 API 명세, 백엔드 개발, AWS 인프라까지 직접 다뤄본, 개발을 아는 PM을 지향합니다. 요구사항 정의와 API 명세, 권한·상태 흐름 설계, 이벤트 기반 AWS 구성과 배포 보안까지 서비스가 만들어지는 과정을 직접 경험했고, 개발팀 멘토(러닝헬퍼)로 기획과 코드 리뷰를 맡았습니다. 지금은 코디세이 AI 올인원 과정에서 AI 기술을 익히며 다룰 수 있는 범위를 넓히고 있습니다.",
-      "제가 가장 중요하게 여기는 건 팀이 같은 기준으로 움직이는 것입니다. 개발이 시작되기 전에 확정된 명세, 상황마다 의미가 다른 응답 코드, 현장의 실수까지 예상한 예외 정책, 그리고 \"동작하는가\"보다 \"운영에서 어떻게 깨질 수 있는가\"를 먼저 보는 리뷰가 그 기준을 만든다고 생각합니다. 진행이 막히면 기다리기보다 문제를 나눠 먼저 움직이고, AI가 내놓은 결과도 근거를 확인한 뒤에 씁니다.",
-      "국어국문학을 전공하며 생각을 글로 정리하는 법을, 학생홍보대사로 100명 넘는 사람들 앞에서 설명하는 법을 익혔습니다. 개발자의 언어와 다른 직군의 언어 사이에서 내용을 정확하게 옮기고, 합의한 것을 누구나 읽을 수 있는 문서로 남기는 일이 PM으로서 제가 가장 잘할 수 있는 일입니다."
+      "현장의 업무 방식을 이해하고, 그것을 정책과 시스템으로 옮기는 PM을 지향합니다. 직접 근무했던 영화관의 출퇴근·교대·급여 업무를 사내 시스템으로 기획했고, 7인 개발팀의 멘토(러닝헬퍼)로 요구사항과 API 명세, DB 설계, 클라우드 인프라를 먼저 확정해 실서비스 배포까지 이끌었습니다. 지금은 코디세이 AI 올인원 과정에서 AI 기술을 익히며 다룰 수 있는 범위를 넓히고 있습니다.",
+      "제가 가장 중요하게 여기는 건 시스템이 실제 업무 방식과 맞는 것입니다. 규정이 정한 것은 놓칠 수 없게 막고, 현장에서 자주 생기는 실수는 예외 정책으로 흡수하며, 사람 사이의 부탁으로 처리되던 일은 승인 흐름이 있는 신청으로 옮깁니다. 개발 전에는 명세를 먼저 확정해 팀이 같은 기준으로 움직이게 하고, 진행이 막히면 기다리기보다 대안을 찾아 먼저 움직입니다. AI가 내놓은 결과도 실제 구조와 근거를 확인한 뒤에 씁니다.",
+      "Django·FastAPI 백엔드와 AWS(EC2, CloudFront, EventBridge, CloudFormation) 구성을 직접 다뤄봤기 때문에 개발팀과 같은 언어로 구현 범위와 리스크를 이야기할 수 있습니다. 국어국문학을 전공하며 생각을 글로 정리하는 법을, 학생홍보대사로 100명 넘는 사람들 앞에서 설명하는 법을 익혔습니다. 현업과 개발팀 사이에서 내용을 정확하게 옮기고, 합의한 것을 누구나 읽을 수 있는 문서로 남기는 일이 제가 가장 잘할 수 있는 일입니다."
     ],
     "tabs": {
       "skills": [
@@ -80,9 +80,9 @@ export const about: { kr: AboutLang; en: AboutLang } = {
   },
   "en": {
     "paragraphs": [
-      "I aim to be a PM who understands development, having worked hands-on across planning, API specifications, backend development, and AWS infrastructure. I have handled requirements definition, API specs, permission and state-flow design, event-driven AWS setups, and deployment security, and I have served as a development team mentor (Learning Helper) responsible for planning and code review. I am currently broadening that range by studying AI in the Codyssey AI program.",
-      "What I care about most is a team moving by the same standard. I believe that standard comes from specs finalized before development starts, response codes that mean something different in each situation, exception policies that anticipate real-world mistakes, and reviews that ask how something could break in production before asking whether it works. When progress stalls, I break the problem down and move first rather than wait, and I use AI output only after checking the evidence behind it.",
-      "Studying Korean Language and Literature taught me to organize my thinking in writing, and serving as a student ambassador taught me to explain things to audiences of over 100 people. Carrying meaning accurately between developers and other roles, and turning what was agreed into documents anyone can read, is what I can do best as a PM."
+      "I aim to be a PM who understands how work actually happens and turns it into policies and systems. I planned an internal system for the scheduling, attendance, shift-change, and payroll workflows I experienced firsthand as a movie theater employee, and as mentor (Learning Helper) to a seven-person development team I finalized requirements, API specs, database design, and cloud infrastructure up front and led the project through to a live deployment. I am currently broadening that range by studying AI in the Codyssey AI program.",
+      "What I care about most is a system that fits the way people really work. Rules that must be followed should be impossible to miss, common on-the-ground mistakes should be absorbed by exception policies, and favors traded between people should become requests with an approval flow. Before development starts, I finalize the specs so the team moves by the same standard; when progress stalls, I look for an alternative and move first rather than wait. I use AI output only after checking it against the real structure and the evidence behind it.",
+      "Because I have worked hands-on with Django and FastAPI backends and AWS (EC2, CloudFront, EventBridge, CloudFormation), I can discuss scope and risk with developers in their own terms. Studying Korean Language and Literature taught me to organize my thinking in writing, and serving as a student ambassador taught me to explain things to audiences of over 100 people. Carrying meaning accurately between business teams and developers, and turning what was agreed into documents anyone can read, is what I do best."
     ],
     "tabs": {
       "skills": [
